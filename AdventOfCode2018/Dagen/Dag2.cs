@@ -9,23 +9,20 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode2018.Dagen
 {
-    internal class Dag1 : Dag, IDag
+    public class Dag2 : Dag, IDag
     {
-        public Dag1()
+        public Dag2()
         {
-            // initialiseer de filepath en append elke lijn text aan de _lines list.
-            _filePath = @"C:\Users\danie\Source\Repos\AdventOfCode2018CSharp\AdventOfCode2018\TextFiles\Dag1.txt";
-            _lines = File.ReadAllLines(_filePath).ToList();
+            this._filePath = @"C:\Users\danie\Source\Repos\AdventOfCode2018CSharp\AdventOfCode2018\TextFiles\Dag2.txt";
+            _lines = _lines = File.ReadAllLines(_filePath).ToList();
 
             _ans1 = 0;
+            _ans2 = 0;
         }
 
         public void CalcPart1()
         {
-            foreach (string line in _lines)
-            {
-                _ans1 += int.Parse(line);
-            }
+            throw new NotImplementedException();
         }
 
         public void CalcPart2()
@@ -35,7 +32,6 @@ namespace AdventOfCode2018.Dagen
 
         public void RunDag()
         {
-            CalcPart1();
             Console.WriteLine(this.ToString());
         }
     }
