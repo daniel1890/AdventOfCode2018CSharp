@@ -51,7 +51,6 @@ namespace AdventOfCode2018.Dagen
 
                     if (_getallenLijst.Contains(_ans2))
                     {
-                        Console.WriteLine(_ans2);
                         _antwoordGevondenPart2 = true;
                         break;
                     }

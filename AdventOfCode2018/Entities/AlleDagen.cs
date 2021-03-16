@@ -11,17 +11,27 @@ namespace AdventOfCode2018.Dagen
     {
         private Dag1 dag1;
         private Dag2 dag2;
+        private Boolean test1Dag;
 
         public AlleDagen()
         {
             dag1 = new Dag1();
             dag2 = new Dag2();
+
+            test1Dag = true;
         }
 
         public void RunAlleDagen()
         {
-            dag1.RunDag();
-            dag2.RunDag();
+            if (test1Dag == false)
+            {
+                dag1.RunDag();
+                dag2.RunDag();
+            }
+            else
+            {
+                dag2.RunDag();
+            }
         }
     }
 }
